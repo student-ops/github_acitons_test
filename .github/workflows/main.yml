@@ -20,4 +20,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Hello world
-        run: echo "Hello from {{ env.PATH_MOUNT }}"
+        run: echo "Hello from { env.PATH_MOUNT }"
