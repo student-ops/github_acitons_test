@@ -1,0 +1,20 @@
+name: ecr push image
+
+on:
+  push:
+    branches:
+      - main
+      - feat-devops
+  workflow_dispatch: # 手動トリガーの追加
+
+env:
+  PATH_MOUNT: /workspaces/myapp
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Hello world
+        run: echo "Hello world"
