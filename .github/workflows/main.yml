@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: set env
         run: |
-          echo "PATH_MOUNT=/etc/hello" >> $GITHUB_STATE
+          echo "PATH_MOUNT=/etc/hello" >> $GITHUB_OUTPUT
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Hello world
